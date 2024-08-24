@@ -1,6 +1,3 @@
-
-Aqui está uma sugestão de README criativo e inteligente para o seu projeto da Igreja Internacional da Graça de Deus:
-
 Igreja Internacional da Graça de Deus - Versículos Bíblicos e Mais
 Bem-vindo ao projeto da Igreja Internacional da Graça de Deus! Este site foi desenvolvido para proporcionar uma experiência interativa e enriquecedora com a Bíblia, oferecendo uma variedade de funcionalidades para explorar versículos, temas e muito mais.
 
