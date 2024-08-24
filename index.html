@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site da Igreja Internacional da Graça de Deus. Explore versículos bíblicos, temas e funcionalidades especiais." />
+    <meta property="og:title" content="Igreja Internacional da Graça de Deus" />
+    <meta property="og:description" content="Explore versículos bíblicos, temas e funcionalidades especiais." />
+    <meta property="og:image" content="assets/img/logo-igreja.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Igreja Internacional da Graça de Deus - Versículos Bíblicos e Mais</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header role="banner">
+        <h1>Igreja Internacional da Graça de Deus</h1>
+    </header>
+
+    <main id="app" role="main">
+        <section aria-labelledby="section-title-1">
+            <h2 id="section-title-1">IIGD - Rio das Pedras</h2>
+            <img src="assets/img/url-fundo.png" alt="Imagem da IIGD" />
+            <form id="search-form" role="search">
+                <fieldset>
+                    <legend>Buscar Versículo Bíblico</legend>
+                    <label for="book">Livro:</label>
+                    <select id="book" required aria-required="true">
+                        <option value="">Selecione um livro</option>
+                    </select>
+                    <label for="chapter">Capítulo:</label>
+                    <input type="number" id="chapter" placeholder="Capítulo" min="1" required aria-required="true" />
+                    <label for="verse">Versículo:</label>
+                    <input type="number" id="verse" placeholder="Versículo" min="1" required aria-required="true" />
+                    <button type="submit" disabled>Buscar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="result-section">
+            <div id="result" aria-live="polite"></div>
+            <div id="navigation" role="navigation">
+                <button id="prev-verse" disabled>Anterior</button>
+                <button id="next-verse" disabled>Próximo</button>
+            </div>
+        </section>
+
+        <section id="extra-functions">
+            <button id="random-verse">Versículo Aleatório</button>
+            <button id="toggle-dark-mode">Tema Escuro</button>
+            <button id="add-to-favorites">Adicionar aos Favoritos</button>
+            <button id="clear-favorites">Limpar Favoritos</button>
+            <button id="share-favorites">Compartilhar Favoritos</button>
+        </section>
+
+        <section id="favorites">
+            <h2>Favoritos</h2>
+            <ul id="favorites-list"></ul>
+        </section>
+
+        <button id="tv-toggle">Modo TV</button>
+    </main>
+
+    <div id="tv-mode">
+        <section aria-labelledby="section-title-tv">
+            <h2 id="section-title-tv" class="sr-only">Modo TV</h2>
+            <div id="tv-result"></div>
+            <div id="tv-navigation">
+                <button id="tv-prev-verse" disabled>Anterior</button>
+                <button id="tv-next-verse" disabled>Próximo</button>
+                <button id="tv-back">Voltar</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/escript.js" defer></script>
+</body>
+</html>
